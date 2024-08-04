@@ -167,7 +167,7 @@ export function useChatForm() {
       addMessageInCurrentChat(
         generate_message(
           "assistant",
-          data?.choices[0]?.message!.content?.trim()
+          data?.choices[0]?.message!.content!.trim()
         )
       );
       toggleSendingMessage(false);
