@@ -10,7 +10,7 @@ export async function verifyToken(token: string) {
   });
   const openai = new OpenAIApi(configuration);
   await openai.createCompletion({
-    model: "text-davinci-003",
+    model: "davinci-002",
     prompt: "cuanto es 1 + 1?",
   });
 }

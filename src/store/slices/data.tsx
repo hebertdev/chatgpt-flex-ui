@@ -2,7 +2,7 @@ import { Model, Parameters, Chat } from "./interfaces";
 
 export const availableModels: Model[] = [
   {
-    name: "text-davinci-003",
+    name: "davinci-002",
     type: "completion",
     description: `Este modelo es capaz de realizar una variedad de tareas de lenguaje natural,
        como la generación de texto coherente y relevante, 
@@ -10,7 +10,7 @@ export const availableModels: Model[] = [
        la respuesta a preguntas, la escritura creativa, 
        la redacción de correos electrónicos y mucho más.`,
     helper: "Genera texto, pero no entiende el contexto de la conversación.",
-    is_free: true,
+    is_free: false,
   },
   {
     name: "gpt-3.5-turbo",
@@ -22,6 +22,22 @@ export const availableModels: Model[] = [
   },
   {
     name: "gpt-4",
+    type: "chat",
+    description:
+      "Más capaz que cualquier modelo GPT-3.5, capaz de realizar tareas más complejas y optimizado para el chat",
+    helper: "Genera texto, y entiende el contexto de la conversación.",
+    is_free: false,
+  },
+  {
+    name: "gpt-4o-mini",
+    type: "chat",
+    description:
+      "Más capaz que cualquier modelo GPT-3.5, capaz de realizar tareas más complejas y optimizado para el chat",
+    helper: "Genera texto, y entiende el contexto de la conversación.",
+    is_free: false,
+  },
+  {
+    name: "gpt-4o",
     type: "chat",
     description:
       "Más capaz que cualquier modelo GPT-3.5, capaz de realizar tareas más complejas y optimizado para el chat",
