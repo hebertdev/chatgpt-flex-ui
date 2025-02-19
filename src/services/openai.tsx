@@ -52,7 +52,6 @@ export async function generateTitleForChat({
     model: "text-davinci-003",
     prompt: message,
     temperature: 0,
-    max_tokens: 256,
   });
 
   return data;
@@ -73,7 +72,6 @@ export async function chatCompletionOpenAI({
     model: model.name,
     messages: messages,
     ...parameters,
-    max_tokens: 2048,
   });
 
   return data;

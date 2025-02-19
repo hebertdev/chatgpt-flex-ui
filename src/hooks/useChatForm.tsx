@@ -145,13 +145,7 @@ export function useChatForm() {
         ? [...currentChat.messages, userMessage]
         : [userMessage];
 
-      let all_messages: Message[] = [
-        {
-          role: "system",
-          content:
-            "You are ChatGPT, a large language model trained by OpenAI & Hebertdev.",
-        },
-      ];
+      let all_messages: Message[] = [];
 
       all_messages = withChatContext
         ? [...all_messages, ...messages_in_current_chat]
