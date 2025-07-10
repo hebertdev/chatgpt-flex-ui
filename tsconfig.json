@@ -19,7 +19,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    "types": ["node","vite-plugin-pwa/client"],
     "paths": {
       "@/*": ["./src/*"]
     }
